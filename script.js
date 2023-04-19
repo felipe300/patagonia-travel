@@ -16,7 +16,7 @@ trekking.addEventListener("click", () => {
 	mainIng.setAttribute("src", "./img/trekking.jpg")
 
 	overlayTitle.innerHTML = val
-	overlayLocation.innerHTML = "Vólcan Villarrica"
+	overlayLocation.innerHTML = "Volcan Villarrica"
 })
 
 swimming.addEventListener("click", () => {
