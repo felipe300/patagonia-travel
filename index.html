@@ -13,11 +13,63 @@
 			crossorigin="anonymous"></script>
 		<!-- FILES -->
 		<link rel="stylesheet" href="style.css">
-		<script src="./script.js"></script>
+		<script defer src="./script.js"></script>
 	</head>
 
 	<body>
-		<h1 class="text-white">Hello, world!</h1>
+		<header>
+			<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Patagonia Travel</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="container d-flex flex-column justify-content-center align-items-center	mt-4 pt-4 mb-5">
+			<h1>¿Qué actividad le gustaría hacer?</h1>
+			<div class="btn-group dropend">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+					id="dropdownTravel">
+					Actividades
+				</button>
+				<div class="dropdown">
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#" id="trekking">Trekking</a></li>
+						<li><a class="dropdown-item" href="#" id="swimming">Natación</a></li>
+						<li><a class="dropdown-item" href="#" id="ferry">Ferry</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="defaultInfo" class="card mt-4" style="width: 28rem;">
+				<div class="makeOverlay">
+					<img id="mainIng" src="./img/trekking.jpg" class="card-img-top" alt="image travel">
+					<div class="overlay">
+						<h2 id="overlayTitle">TREKKING</h2>
+						<p id="overlayLocation">Volcán villarrica</p>
+					</div>
+				</div>
+				<div class="card-body">
+					<h5 class="card-title" id="cardTitle">Trekking</h5>
+					<p class="card-text" id="cardText">"Modalidad de excursionismo que consiste en recorrer a pie largas
+						distancias o zonas determinadas, generalmente de alta
+						montaña y poco frecuentadas por el turismo convencional"
+						<a href="#">Conocer más</a>
+					</p>
+					<a href="#" class="btn btn-outline-secondary">Agendar actividad</a>
+				</div>
+			</div>
+		</main>
 
 	</body>
 
